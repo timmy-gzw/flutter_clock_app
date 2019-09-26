@@ -1,3 +1,4 @@
+import 'package:clock_app/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/first_screen.dart';
 
@@ -25,6 +26,7 @@ class AppClock extends StatelessWidget {
       child: DefaultTabController(
         length: 3,
         child: Scaffold(
+          bottomNavigationBar: BottomBar(),
           appBar: AppBar(
             elevation: 0.0,
             backgroundColor: Colors.transparent,
@@ -85,11 +87,53 @@ class AppClock extends StatelessWidget {
               Center(
                 child: FirstTab(),
               ),
-              Text("Second Screen"),
+              Center(
+                child: SecondTab(),
+              ),
               Text("Thirst Screen"),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class BottomBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.fromLTRB(50, 0, 50, 50),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          FlatButton(
+            child: Text(
+              "EDIT ALARMS",
+              style: TextStyle(letterSpacing: 1.5),
+            ),
+            color: Color(0xFFFF5E92),
+            textColor: Colors.white,
+            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+            onPressed: () {},
+          ),
+          FloatingActionButton(
+            child: Text(
+              "+",
+              style: TextStyle(
+                  color: Color(0xff253165),
+                  fontWeight: FontWeight.w700,
+                  fontSize: 25),
+            ),
+            onPressed: (){},
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.black,
+            elevation: 5,
+            highlightElevation: 3,
+          )
+        ],
       ),
     );
   }
