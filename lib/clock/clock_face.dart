@@ -24,7 +24,7 @@ class ClockFace extends StatelessWidget {
                   offset: Offset(8.0, 0),
                   blurRadius: 13,
                   spreadRadius: 1,
-                  color: Color(0xffd3e0f0)
+                  color: Color(0xFFD3E0F0)
                 )
               ]
             ),

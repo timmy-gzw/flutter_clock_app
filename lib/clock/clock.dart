@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:clock_app/clock_text.dart';
+import 'package:clock_app/clock/clock_text.dart';
 import 'package:flutter/material.dart';
-import 'package:clock_app/clock_face.dart';
+import 'package:clock_app/clock/clock_face.dart';
 
 import 'clock_dial_painter.dart';
 import 'clock_hands.dart';

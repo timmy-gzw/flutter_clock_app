@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'package:clock_app/clock_text.dart';
+import 'package:clock_app/clock/clock_text.dart';
 import 'package:flutter/material.dart';
 
 class ClockDialPainter extends CustomPainter{
