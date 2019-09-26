@@ -24,7 +24,7 @@ class ClockHands extends StatelessWidget {
                 fit: StackFit.expand,
                 children: <Widget>[
                   new CustomPaint( painter: new HourHandPainter(
-                      hours: dateTime.hour, minutes: dateTime.minute, showHeartShape: showHourHandleHeartShape),
+                      hours: dateTime.hour, minutes: dateTime.minute),
                   ),
                   new CustomPaint(painter: new MinuteHandPainter(
                       minutes: dateTime.minute, seconds: dateTime.second),
@@ -39,32 +39,4 @@ class ClockHands extends StatelessWidget {
   }
 }
 
-//class _ClockHandState extends State<ClockHands> {
   Timer _timer;
-//
-//  _ClockHandState();
-//
-//  @override
-//  void initState() {
-//    super.initState();
-//    dateTime = new DateTime.now();
-//    _timer = new Timer.periodic(const Duration(seconds: 1), setTime);
-//  }
-//
-//  void setTime(Timer timer) {
-//    setState(() {
-//      dateTime = new DateTime.now();
-//    });
-//  }
-//
-//  @override
-//  void dispose() {
-//    _timer.cancel();
-//    super.dispose();
-//  }
-//
-//  @override
-//  Widget build(BuildContext context) {
-//  }
-//}
-
