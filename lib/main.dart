@@ -90,7 +90,9 @@ class AppClock extends StatelessWidget {
               Center(
                 child: SecondTab(),
               ),
-              Text("Thirst Screen"),
+              Center(
+                child: Text("Thirst Screen"),
+              ),
             ],
           ),
         ),
